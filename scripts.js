@@ -4,8 +4,6 @@ const slide9 = document.querySelector('#slide-9');
 const slide10 = document.querySelector('#slide-10');
 const slide11 = document.querySelector('#slide-11');
 
-console.log(slide9, slide10, slide11);
-
 moreButton.addEventListener('click', () => {
   if (moreSpan.textContent === 'Скрыть') {
     moreSpan.textContent = 'Показать все';

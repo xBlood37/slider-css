@@ -45,7 +45,6 @@ a {
 }
 
 /* slider */
-
 .library {
   background: linear-gradient(90deg, rgba(248, 248, 248, 1) 48%, rgb(241, 240, 240) 95%);
   min-height: 134px;
@@ -125,7 +124,6 @@ a {
 /* pagination */
 .pagination {
   display: flex;
-  align-items: center;
   justify-content: center;
   gap: 12px;
 
@@ -147,11 +145,10 @@ a {
   border-radius: 50%;
 }
 .pagination__link:hover::before {
-  background-color: rgba(181, 182, 188, 1);
+  background-color: rgba(100, 101, 104, 0.541);
 }
 
 /* more button */
-
 .more {
   display: flex;
   align-items: center;
