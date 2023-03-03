@@ -96,7 +96,8 @@ a {
   align-items: center;
   flex-shrink: 0;
   scroll-snap-align: start;
-  scroll-margin-left: 19px;
+  scroll-margin-left: 12px;
+  scroll-snap-stop: always;
 
   padding: 16px;
 
@@ -117,6 +118,26 @@ a {
 }
 @media screen and (min-width: 564px) {
   .card--block {
+    display: none;
+  }
+}
+.card::before {
+  position: absolute;
+  right: 0px;
+  top: 80px;
+  height: 136px;
+  width: 32px;
+  content: '';
+  pointer-events: none;
+  background: linear-gradient(to left, rgba(248, 248, 248, 0.1) 16%, rgba(248, 248, 248, 0.0001) 100%);
+}
+@media screen and (min-width: 375px) {
+  .card::before {
+    top: 56px;
+  }
+}
+@media screen and (min-width: 520px) {
+  .card::before {
     display: none;
   }
 }
@@ -144,7 +165,7 @@ a {
   height: 12px;
   border-radius: 50%;
 }
-.pagination__link:hover::before {
+.pagination__link:active::before {
   background-color: rgba(100, 101, 104, 0.541);
 }
 
